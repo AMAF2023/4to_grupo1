@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<header>
-    <nav>
-        <img src="../img/guerra fria img.jpg" alt="">
-        <ul>
-           <a href="./seg_fria.html"><li>guerra fria</li></a> 
-            <a href="./antagonismo.html"><li>antagonismo oscilatorio</li></a>
-            <a href="./distension.html"><li>distension</li></a>
-            <a href="../index.html"><li>inicio</li></a>
-        </ul>
-    </nav>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="../index.html"> <img src="../img/logopestaña.png" alt=""></a>
+            <ul class="item_nav">
+                <a href="./guerra_fria.html" class="href_nav">
+                    <li class="li_nav">Guerra Fria</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="foto_preguntas">
+
+            </div>
+        </section>
+        <!-- //INICIA LINEA DE TIEMPO -->
+        <div class="timeline">
+            <div class="event" onclick="openPopup('Evento 1', 'Descripción del Evento 1.')">Año 2020</div>
+            <div class="event" onclick="openPopup('Evento 2', 'Descripción del Evento 2.')">Año 2021</div>
+            <div class="event" onclick="openPopup('Evento 3', 'Descripción del Evento 3.')">Año 2022</div>
+            <div class="event" onclick="openPopup('Evento 1', 'Descripción del Evento 1.')">Año 2020</div>
+            <div class="event" onclick="openPopup('Evento 2', 'Descripción del Evento 2.')">Año 2021</div>
+            <div class="event" onclick="openPopup('Evento 3', 'Descripción del Evento 3.')">Año 2022</div>            
+          </div>
+          
+          <div class="popup" id="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-content"></p>
+          </div>
+          <!-- //TERMINA LINEA DE TIEMPO -->
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="../script.js"></script>
 </body>
+
+  
 </html>

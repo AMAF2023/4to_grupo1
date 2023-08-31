@@ -1,40 +1,49 @@
-li{
-    
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+.li_nav{font-family: Poppins ;
     width: 100px;
     height: 50px;
-    margin-top: 0;
+    margin:10px;
+    width: auto;
+    display: flex;
+    align-items: center;
 }
-img{
-    border: solid red 2px;
-}
+
 nav{
     display: flex;
-    background-color: rgb(245, 252, 252);
-    justify-content: space-between;
-    height: 70px;
+    background-color: rgb(239, 247, 243);
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
 }
-ul{
+nav img{
+    width: 70px;
+}
+.item_nav{
     display: flex;
     list-style: none;
+    margin: 0;
 }
-a{
+.href_nav{
     text-decoration: none;
     color: black;
     
 }
-body{
-    background-color: rgb(248, 249, 249);
-}
+
 #contenedor_principal{
-    padding: 3rem;
+    padding: 0 35px;
     display: flex;
     align-items: center;
-    height: 200px;
     background-color: aquamarine;
 }
 .reverse{
     flex-direction: row-reverse;
-    background-color: blueviolet !important;
+    background-color: rgb(73, 251, 162) !important;
 }
 .contenedor_imagen{
     width: 1500px;
@@ -52,5 +61,77 @@ body{
     margin: 3rem;
 }
 
+section#foto_fondo{
+    height: 600px;
+    background-image: url(./img/R.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#principal p{
+    color: white;
+    padding: 20px;
+}
+.titulo_principal{
+    font-size: 36px;
+    font-weight: 700px;
+}
+.descripcion_principal{
+    font-size: 18px;
+}
+#parrafo_inicio{
+    color: #0e0e0e;
+    padding: 20px;
+    font-size: 24px;
+    margin: 40px;
+}
+/* vista de preguntas */
+#foto_preguntas{
+    height: 400px;
+    background-color: #0e0e0e;
+}
 
-
+/* LINEA DE TIEMPO NO TOCAR */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .event {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
