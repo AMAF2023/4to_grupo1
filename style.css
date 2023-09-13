@@ -121,6 +121,7 @@ section#foto_fondo{
   .popup {
     display: none;
     position: fixed;
+    z-index: 20;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -128,10 +129,24 @@ section#foto_fondo{
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
-  
+.imagenFondoPopup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0e0e0e;
+    padding: 20px;
+    margin-bottom: 10px;
+}
   .close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
+  }
+
+  
+  .tarjetas{
+    display: flex;
+    justify-content: space-around;
+    z-index: -20px;
   }

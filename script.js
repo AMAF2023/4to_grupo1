@@ -5,6 +5,7 @@ function openPopup(title, content) {
     document.getElementById("popup").style.display = "block";
   }
   
-  function closePopup() {
+function closePopup() {
     document.getElementById("popup").style.display = "none";
-  }
+}
+
