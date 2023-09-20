@@ -1,35 +1,20 @@
 //LINEA DE TIEMPO
-/* function openPopup(title, content) {
-    document.getElementById("popup-title").innerHTML = title;
-    document.getElementById("popup-content").innerHTML = content;
-    document.getElementById("popup").style.display = "block";
-  }
-  
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-} */
-
-
-const fechaDos = document.getElementById("fechaDos");
-const fechaTres = document.getElementById("fechaTres");
-
-const titulo2 = document.getElementById("titulo2");
-const texto2 = document.getElementById("texto2");
-
-const titulo3 = document.getElementById("titulo3");
-const texto3 = document.getElementById("texto3");
-
-const emergente_conteiner = document.getElementById("emergente_conteiner");
 
 const fechaUno = document.getElementById("fechaUno");
+const fechaDos = document.getElementById("fechaDos");
+const fechaTres = document.getElementById("fechaTres");
 const fechaCuatro = document.getElementById("fechaCuatro");
 
 const titulo1 = document.getElementById("titulo1");
 const texto1 = document.getElementById("texto1");
-
+const titulo2 = document.getElementById("titulo2");
+const texto2 = document.getElementById("texto2");
+const titulo3 = document.getElementById("titulo3");
+const texto3 = document.getElementById("texto3");
 const titulo4 = document.getElementById("titulo4");
 const texto4 = document.getElementById("texto4");
 
+const emergente_conteiner = document.getElementById("emergente_conteiner");
 
 const cerrar = document.getElementById("cerrar");
 

@@ -112,11 +112,16 @@ button {
     border: none;
     box-shadow: 0 2px 4px #0e0e0e;
     color: #ffffff;
-    font-size: 1em;
-    padding: 10px 25px;
+    font-size: 14px;
+    padding: 5px 15px;
     cursor: pointer;
   }
-  
+  div.fechas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
   .destinos {
     display: flex;
     align-items: center;
@@ -127,7 +132,7 @@ button {
   
   .emergente__conteiner {
     display: flex;
-    background-color: #95959535;
+    background-color: rgba(0, 0 , 0, 0.8);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -144,7 +149,9 @@ button {
   .titulo2,
   .texto2,
   .titulo3,
-  .texto3 {
+  .texto3,
+  .titulo4,
+  .texto4 {
     display: none;
   }
   
